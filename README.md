@@ -1,1 +1,3 @@
-# haskell-hangman2
+# haskell-hangman
+
+Hangman game from the "Learn Haskell programming" book 
