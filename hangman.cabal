@@ -1,0 +1,21 @@
+name:                hangman
+version:             0.1.0.0
+homepage:            https://github.com/githubuser/haskell-hangman#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Yuriy Lazaryev
+maintainer:          unisay@gmail.com
+copyright:           2017 Yuriy Lazaryev
+category:            Web
+build-type:          Simple
+cabal-version:       >=1.10
+extra-source-files:  README.md
+extra-source-files:  data/dict.txt
+
+executable hangman
+  hs-source-dirs:      src
+  main-is:             Main.hs
+  default-language:    Haskell2010
+  build-depends:       base >= 4.7 && <5
+                     , random == 1.1
+                     , split == 0.2.2
