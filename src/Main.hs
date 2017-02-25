@@ -49,7 +49,7 @@ alreadyGuessed (Puzzle _ _ guessed) c = c `elem` guessed
 
 renderPuzzleChar :: Maybe Char -> Char
 renderPuzzleChar (Just c) = c
-renderPuzzleChar Nothing = '_'
+renderPuzzleChar Nothing  = '_'
 
 fillInCharacter :: Puzzle -> Char -> Puzzle
 fillInCharacter (Puzzle word filledInSoFar s) c = Puzzle word newFilledInSoFar (c : s)
